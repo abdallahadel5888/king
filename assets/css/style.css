@@ -1,0 +1,615 @@
+/* google font  */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* يمنع التمرير الأفقي */
+body,
+html {
+  overflow-x: hidden;
+}
+/* يعالج مشكلة الـrow اللي بتعمل margin سلبي */
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  /* color: #f4cba7;
+  background-color: #f2deb1; */
+}
+
+/* جميع العناوين من H2 إلى H6 */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "El Messiri", sans-serif;
+  color: #6e3b2e;
+  font-weight: 900;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+nav {
+  background: linear-gradient(to bottom, #f6ffd0, #f2e9d8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 89px;
+}
+
+/* ✅ ماينفعش تكتب :hover بعد span كده لأنها بتأثر على أي عنصر داخل span */
+nav span {
+  padding: 10px;
+}
+
+nav span img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15%;
+  transition: transform 0.7s ease; /* حدد الخاصية اللي هتتحرك */
+  padding: 10px;
+}
+
+/* ✅ الصح إنك تعمل hover على الصورة نفسها مش على span */
+nav span img:hover {
+  transform: scale(1.05);
+}
+
+/* روابط الناف */
+nav .links {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.hiero {
+  font-family: "Noto Sans Egyptian Hieroglyphs";
+  font-size: 20px;
+}
+
+/* الروابط */
+nav .links > a {
+  font-weight: bold;
+  font-size: 22px;
+  color: #926437;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+/* التأثير عند الـ hover */
+nav .links > a:hover {
+  color: #e2ddd6;
+  text-shadow: 0px 0px 8px #d4a373;
+  background-color: #8b6b3f;
+  transform: scale(1.05);
+}
+
+/* أيقونة القائمة الجانبية (الهامبرجر) */
+nav .bars > img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* تنسيق الأوف كانفاس */
+.offcanvas {
+  background-color: #f2dba9;
+  color: #3b2f2f;
+  font-family: "Cairo", sans-serif;
+}
+
+/* الهيدر */
+.offcanvas-header {
+  border-bottom: 1px solid blue;
+  justify-content: space-between;
+}
+
+/* العنوان */
+.offcanvas-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* زر الإغلاق في أقصى الطرف */
+.offcanvas-header .btn-close {
+  margin-left: auto;
+}
+
+/* اللينكات */
+.offcanvas-body a {
+  display: block;
+  padding: 8px 15px; /* بدل 8px 0 */
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 0.7s ease;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.offcanvas-body a:hover {
+  background-color: rgba(146, 100, 55, 0.1);
+  color: #5b3a11;
+}
+
+.offcanvas-header {
+  justify-content: space-between !important;
+}
+
+[dir="rtl"] .offcanvas-header .btn-close {
+  margin-right: 280px;
+}
+
+svg {
+  color: #926437;
+}
+
+h1 {
+  margin-top: 120px;
+  width: 100%;
+  color: #5b3a11;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Reem Kufi";
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== Carousel Container ====== */
+#carouselExampleCaptions {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Carousel Images ====== */
+.carousel-item img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(85%);
+}
+
+/* ====== Caption Styling ====== */
+.carousel-caption {
+  bottom: 20%;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  color: #f6e5b2; /* ذهبي فاتح */
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 1s ease;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffd86a; /* ذهبي */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+}
+.carousel-item video {
+  width: 100%;
+  height: 75vh; /* ارتفاع الشاشة بالكامل */
+  object-fit: cover;
+}
+
+/* ====== Controls ====== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* ====== Animation ====== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 993px) {
+  #carouselExampleCaptions {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img {
+    width: 70%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+.intro {
+  width: 95%;
+  margin-right: 20px;
+  line-height: 2;
+  background-color: #e8d6a736;
+}
+.intro p {
+  font-size: 32px;
+  font-weight: 600;
+  color: #463b2a;
+}
+h2 {
+  margin-top: 10px;
+  margin-right: 20px;
+  font-family: "El Messiri";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: #5b3a11;
+  font-weight: bold;
+}
+
+@media (max-width: 993px) {
+  .intro > .conten {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1440px) {
+  .intro > .conten {
+    flex-direction: column;
+  }
+  .intro > .head {
+    width: 90%;
+  }
+
+  .intro > .conten p {
+    width: 90%;
+  }
+
+  .intro > .conten .img img {
+    width: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .intro {
+    width: 100%;
+    color: #3b2f1e;
+    font-weight: 600;
+    font-family: "Tajawal", "Noto Sans Arabic", sans-serif;
+  }
+}
+
+.two {
+  background-color: #e8d6a715;
+}
+.two .photo {
+  margin-right: 10px;
+  width: 100%;
+}
+.two .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #3b2f1e;
+}
+
+.two h3 {
+  font-size: 40px;
+}
+.two h4 {
+  font-size: 32px;
+}
+
+.two p {
+  width: 100%;
+  color: #3b2f1e;
+  font-weight: 600;
+  font-family: "Tajawal", "Noto Sans Arabic", sans-serif;
+}
+.two a {
+  text-decoration: none;
+  color: #4a3b2e;
+  font-size: 25px;
+  background-color: #a68b5b;
+  border-radius: 50px;
+  padding: 15px;
+  display: flex;
+  width: fit-content;
+  margin-top: 15px;
+  color: #e8e8e8;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.two a:hover {
+  background-color: #c7aa73; /* أفتح شوية */
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 993px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* علشان كل العناصر تتوسّط أفقياً */
+    text-align: center; /* علشان الكلام نفسه يكون في النص */
+  }
+
+  .two img {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .two p {
+    margin: 0 auto;
+  }
+
+  .two a {
+    width: 80%; /* خليه ياخد مساحة أكبر */
+    justify-content: center; /* علشان النص جوه الزرار يكون في النص */
+    text-align: center;
+    margin: 20px auto; /* توسيط الزرار */
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* 🏺 سكشن إنجازات المصريين القدماء */
+#achievements {
+  background-color: #fff7e5;
+}
+
+/* تصميم الكروت داخل سكشن إنجازات المصريين القدماء */
+#achievements .card {
+  background-color: #eee5d3c0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.6s ease-in-out;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#achievements .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(139, 107, 63, 0.3);
+}
+
+/* الصورة داخل كروت سكشن الإنجازات */
+#achievements .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* التوهج الذهبي */
+#achievements .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 215, 0, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: skewX(-30deg);
+  transition: 0.8s;
+  opacity: 0;
+}
+
+#achievements .card:hover::after {
+  left: 125%;
+  opacity: 1;
+}
+
+/* النصوص داخل السكشن */
+#achievements p {
+  color: #3b2f2f;
+  line-height: 1.7;
+}
+
+#achievements h2 {
+  color: #8b6b3f;
+  font-size: 32px;
+}
+
+#achievements h5 {
+  color: #8b6b3f;
+}
+
+#achievements .text-center {
+  text-align: center;
+}
+
+.imags {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.album {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden; /* يمنع تحرك الصور للخارج */
+}
+.album img {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  transition: transform 0.6s ease, filter 0.6s ease;
+  will-change: transform; /* تحسين الأداء */
+}
+
+.imags img:hover {
+  width: 50%;
+  filter: brightness(1.1); /* لمعة خفيفة */
+  z-index: 2; /* تخلي الصورة فوق الباقيين */
+}
+
+#pharaohs {
+  background-color: #f7f3e8;
+  font-family: "Amiri", serif;
+}
+
+.section-title {
+  color: #8b6b3f;
+  font-family: "El Messiri", sans-serif;
+}
+
+.pharaohs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pharaoh-card {
+  flex: 1 1 220px;
+  max-width: 250px;
+}
+
+.pharaoh-card .card {
+  background-color: #fff6e5;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+  box-shadow: 0 4px 10px rgba(146, 100, 55, 0.3);
+}
+
+.pharaoh-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.pharaoh-card h5 {
+  color: #8b6b3f;
+  margin-top: 10px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.pharaoh-card p {
+  color: #583030;
+  font-size: 20px;
+  padding: 0 10px 15px;
+  line-height: 1.6;
+}
+
+/* ✨ تأثير hover فرعوني */
+.pharaoh-card .card:hover {
+  transform: translateY(-8px);
+  border-color: #c9a54b;
+  box-shadow: 0 0 20px rgba(201, 165, 75, 0.4);
+}
+
+.pharaoh-card .card:hover img {
+  transform: scale(1.05);
+  filter: sepia(0.3) brightness(1.1);
+}
+
+.museums-section {
+  background: linear-gradient(to bottom, #faf6ef, #f2e9d8);
+  color: #5b3a11;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  color: #8b5a2b;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #7a5523;
+  line-height: 1.8;
+}
+
+.museum-card {
+  height: 675px;
+  background: #fffdf7;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.museum-card > button {
+  padding: 10px;
+  text-decoration: none;
+  color: #4a3b2e;
+  font-size: 15px;
+  background-color: #a68b5b;
+  border-radius: 16px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #e8e8e8;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.museum-card > button:hover {
+  background-color: #c7aa73; /* أفتح شوية */
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.museum-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 18px rgba(146, 100, 55, 0.3);
+}
+
+.visit-btn {
+  background-color: #8b5a2b;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.visit-btn:hover {
+  background-color: #d4c6b7;
+  transform: scale(1.05);
+}
+
+footer p {
+  color: #4a3b2e;
+}

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemet</title>
+    <link rel="icon" type="image/png" href="./assets/imgs/logo kemet.png " />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
+      rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+    <!-- CSS الخاص بالمشروع -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Animate.css (لازم عشان WOW.js يشتغل) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- مكتبة WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- // animatecss -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="d-flex justify-content-between align-items-center p-2 shadow p-3 mb-5 fixed-top">
+      <a href="/index.html">
+        <span>
+          <img src="./assets/imgs/logo kemet.png" alt="logo" />
+        </span>
+      </a>
+      <div class="links d-none d-lg-flex justify-content-center gap-5">
+        <a class="shadow p-2 rounded text-decoration-none" href="./index.html"
+          >اكتشف كِمِت <span class="fw-bold hiero">𓆎𓅓𓏏𓊖</span>
+        </a>
+        <a class="shadow p-2 rounded text-decoration-none" href="./king.html"
+          >عروش كِمِت <span class="fw-bold hiero">𓇅𓆎𓅓𓏏𓊖</span></a
+        >
+        <a class="shadow p-2 rounded text-decoration-none" href="#"
+          >كنوز كِمِت <span class="fw-bold hiero">𓋞𓆎𓅓𓏏𓊖 </span>
+        </a>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="d-lg-none cursor-pointer"
+        role="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu">
+        <path
+          d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2" />
+      </svg>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasMenu"
+      aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">القائمة</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li>
+            <a
+              href="./index.html"
+              class="text-decoration-none text-muted d-block mb-2"
+              >أكتشف كمت</a
+            >
+          </li>
+          <li>
+            <a
+              href="./king.html"
+              class="text-decoration-none text-muted d-block mb-2"
+              >عروش كمت</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-muted d-block mb-2"
+              >كنوز كمت</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="d-flex">
+      <h1 data-aos="zoom-out">
+        الحضارة المصرية القديمة <span class="d-block">𓆎𓅓𓏏𓊖 𓇳</span>
+      </h1>
+    </header>
+
+    <!-- hero section  -->
+    <!-- hero section -->
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- السلايد الأول (فيديو) -->
+          <div class="carousel-item active">
+            <video
+              class="d-block w-100"
+              controls
+              autoplay
+              loop
+              playsinline
+              muted>
+              <source
+                src="./videos/ترقبوا افتتاح المتحف المصري الكبير قريبا - اكبر متحف في العالم Grand Egyptian Museum_2.mp4"
+                type="video/mp4" />
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>المتحف المصري الكبير</h5>
+              <p>ترقبوا افتتاح المتحف المصري الكبير قريبًا</p>
+            </div>
+          </div>
+
+          <!-- السلايد الثاني -->
+          <div class="carousel-item">
+            <img
+              src="./assets/imgs/carousel1.png"
+              loading="lazy"
+              class="d-block w-100"
+              alt="slide 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>الفن والنقوش</h5>
+              <p>روائع خالدة تحكي قصة شعب لا يُنسى</p>
+            </div>
+          </div>
+
+          <!-- السلايد الثالث -->
+          <div class="carousel-item">
+            <img
+              src="./assets/imgs/carousel2.png"
+              loading="lazy"
+              class="d-block w-100"
+              alt="slide 3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>أسرار الأهرامات</h5>
+              <p>عبقرية البناء والهندسة في قلب الصحراء</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- أزرار التنقل -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <section class="intro mb-5 bg-light">
+      <div class="head">
+        <h2 style="margin-top: 50px">هوية حضارة خالدة عبر العصور</h2>
+        <p class="fs-2 me-3">
+          كِمِت…("الأرض السوداء ") <span>أو</span> تا مِري…("الأرض المحبوبة") أو
+          تاوي ("البلدين المتحدتين")
+        </p>
+      </div>
+
+      <div class="conten d-flex gap-3">
+        <p class="me-2">
+          كل ديه أسماء بتعبّر عن هويّة وحضارة… هي مش مجرد آثار محفورة على حجر،
+          بل هي الهويه التي علّمت الإبداع والنظام، وهي اللي علّمت الإنسان معنى
+          الخلود في كل زمان ومكان. حضارة قامت على العلم والفكر والإيمان، مش على
+          القوّة والسيف. من بين جدران المعابد ونقوش المقابر خرجت أعظم القصص اللي
+          عرفها التاريخ — قصص عن ملوك وملكات، عن بناءٍ لا يفنى، وعن روحٍ لا
+          تموت. مصر القديمة كانت ولازالت النبض الأول للحضارة الإنسانية، منها بدأ
+          النور، وإليها يرجع كل من يبحث عن أصل الإنسان ومعنى الوجود. وهكذا، تبقى
+          مصر ليست مجرد أرضٍ حملت التاريخ، بل قلبٌ نابض بالخلود، تنبض جدرانها
+          بالحكمة، وتتنفس حجارتها بالعظمة. كل نقشٍ فيها حكاية، وكل تمثالٍ شاهدٌ
+          على عبقرية لا تكررها الأزمنة. هي الحضارة التي سبقت الفكر، وعلّمت
+          العالم معنى الفن، ومعنى الإيمان، ومعنى أن يعيش الإنسان ليصنع أثرًا لا
+          يُمحى. من نيلها وذهب رمالها، وُلدت البدايات، ومنها سيتعلّم كل من يأتي
+          بعدُ أن المجد لا يُورَّث… بل يُصنع، كما صُنِعَ في كِمِت – مصر القديمة.
+        </p>
+
+        <div class="img">
+          <img
+            class="rounded-3 object-fit-contain"
+            src="./assets/imgs/كيميت 1.jpg"
+            alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="two gap-5 d-flex flex-column mt-5">
+      <div class="card-one" data-aos="fade-right">
+        <div class="content d-flex gap-5">
+          <div class="div photo">
+            <img
+              src="./assets/imgs/ما قبل الاسرات.jpg"
+              loading="lazy"
+              alt="ما اقبل الاسرات" />
+          </div>
+          <div>
+            <h3>العصور التاريخية</h3>
+            <h4>البدايات الأولى… حين وُلدت كِمِت من النيل والطينن</h4>
+            <p class="w-75 fs-2">
+              يمثل عصر ما قبل الأسرات المرحلة التي سبقت توحيد مصر وقيام أول دولة
+              في التاريخ حوالي عام 3100 ق.م.، وهي الفترة التي لم تكن فيها كتابة
+              بعد. شهدت هذه الحقبة تطورًا تدريجيًا من العصر الحجري القديم إلى
+              الحديث، وبدأ يظهر فيها تجانس بين الحضارات المصرية المبكرة على ضفاف
+              النيل، مثل: حضارة المعادي (4000 – 3100 ق.م.) في مصر السفلى. حضارة
+              البداري (5000 – 4000 ق.م.) قرب أسيوط. حضارة نقادة الأولى (4000 –
+              3500 ق.م.) في صعيد مصر. وهي المرحلة التي مهدت لظهور مصر ككيان
+              سياسي موحد وأقدم دولة في العالم
+            </p>
+            <a
+              class="text-center"
+              href="https://egymonuments.gov.eg/ar/historical-periods/predynastic-period"
+              >عرض التفاصيل
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== -->
+      <div class="card-one bg-light" data-aos="fade-left">
+        <div class="content d-flex gap-5">
+          <div class="div photo">
+            <img
+              src="./assets/imgs/عصر الدوله القديمة.png"
+              loading="lazy"
+              alt="ما اقبل الاسرات" />
+          </div>
+          <div>
+            <h3>العصور التاريخية</h3>
+            <h4>عصر الدولة القديمة</h4>
+            <p class="w-75 fs-2">
+              امتدّ عصر الدولة القديمة من الأسرة الثالثة حتى السادسة، وشهد قمة
+              مجد العمارة المصرية. بدأ بزوسر الذي شيّد أول هرم مدرّج في سقارة
+              على يد المهندس إمحوتب، ثم جاء سنفرو فبنى ثلاثة أهرامات طوّرت الشكل
+              الكامل للهرم. وفي عهد الملك خوفو شُيّد الهرم الأكبر بالجيزة، تلاه
+              خفرع صاحب تمثال أبو الهول، ومنكاورع الذي استخدم الجرانيت من أسوان.
+              ومع الأسرات الخامسة والسادسة ظهرت نصوص الأهرام وتدهورت سلطة الملوك
+              تدريجيًا حتى نهاية حكم بيبي الثاني، لتبدأ مرحلة الاضمحلال الأول.
+            </p>
+
+            <a
+              class="text-center"
+              href="https://egymonuments.gov.eg/ar/historical-periods/predynastic-period"
+              >عرض التفاصيل
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== -->
+      <div class="card-one bg-light" data-aos="fade-left">
+        <div class="content d-flex gap-5">
+          <div class="div photo">
+            <img
+              src="./assets/imgs/عصر الدوله الوسطي.png"
+              loading="lazy"
+              alt="الوسطي" />
+          </div>
+          <div>
+            <h3>العصور التاريخية</h3>
+            <h4>بداية أول دولة في التاريخ</h4>
+            <p class="w-75 fs-2">
+              الدولة الوسطى (من الأسرة الحادية عشرة إلى الثالثة عشرة) كانت عصر
+              ازدهار واستقرار بعد توحيد مصر على يد الملك منتوحتب الثاني من طيبة
+              حوالي 2055 ق.م. استمرت القوة في عهد أمنمحات الأول الذي أسس العاصمة
+              الجديدة إيتت تاوي، وبدأت نهضة شاملة في الزراعة والبناء والتجارة،
+              خصوصًا في الفيوم والنوبة. شهد عصر سنوسرت الثالث وأمنمحات الثالث
+              قمة الازدهار بفضل المشروعات الكبرى والحصون الحدودية. تميزت الدولة
+              الوسطى أيضًا بازدهار الأدب واللغة المصرية الوسطى، التي أصبحت لغة
+              الثقافة والنصوص الرسمية لأكثر من ألف عام.
+            </p>
+            <a
+              class="text-center"
+              href="https://egymonuments.gov.eg/ar/historical-periods/predynastic-period"
+              >عرض التفاصيل
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card-one bg-light" data-aos="fade-left">
+        <div class="content d-flex gap-5">
+          <div class="div photo">
+            <img
+              src="./assets/imgs/عصرا لدولةالحديثه.png"
+              loading="lazy"
+              alt="" />
+          </div>
+          <div>
+            <h3>العصور التاريخية</h3>
+            <h4>عصر الدوله الحديثه</h4>
+            <p class="w-75 fs-2">
+              عصر الدولة الحديثة (من حوالي 1550 إلى 1070 ق.م) كان أعظم فترات مصر
+              القديمة، وهو عصر القوة والمجد العسكري والفني. بدأ بعد طرد الهكسوس
+              على يد أحمس الأول، واتخذت طيبة عاصمة للدولة والإله آمون حاميها.
+              شهدت مصر فيه أزهى عصورها مع ملوك كبار مثل تحتمس الثالث الذي وسّع
+              حدود مصر حتى الفرات، والملكة حتشبسوت التي ازدهرت في عهدها التجارة
+              والفن، ورمسيس الثاني صاحب معركة قادش وباني أعظم المعابد. انتهى
+              العصر تدريجيًا بضعف الملوك اللاحقين وتراجع النفوذ الخارجي، لكن
+              آثارهم ومعابدهم بقيت شاهدة على مجدٍ خالد.
+            </p>
+            <a
+              class="text-center"
+              href="https://egymonuments.gov.eg/ar/historical-periods/predynastic-period"
+              >عرض التفاصيل
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🏺 إنجازات المصريين القدماء -->
+    <section
+      id="achievements"
+      class="py-5"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="200">
+      <div class="container mt-5">
+        <h2 class="text-center mb-4" style="color: #8b6b3f; font-size: 32px">
+          إنجازات المصريين القدماء
+        </h2>
+        <p
+          class="text-center mb-5"
+          style="
+            color: #6e5c4d;
+            max-width: 700px;
+            margin: auto;
+            font-size: 25px;
+          ">
+          برع المصريون القدماء في شتى مجالات الحياة، فكانت حضارتهم منارةً للعلم
+          والفن والهندسة والفلك.
+        </p>
+
+        <div
+          class="row g-4"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+          ">
+          <!-- 🏗️ الهندسة المعمارية -->
+          <div class="col-md-3" style="flex: 1 1 220px; max-width: 250px">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="/assets/imgs/Pyramids-Giza-Cairo-Egypt.jpg"
+                loading="lazy"
+                alt="الهندسة المعمارية" />
+              <h5 style="color: #8b6b3f">الهندسة المعمارية</h5>
+              <p>
+                إبداع في بناء الأهرامات والمعابد باستخدام قياسات دقيقة مذهلة ما
+                زالت تبهر العالم.
+              </p>
+            </div>
+          </div>
+
+          <!-- ⚕️ الطب والتحنيط -->
+          <div class="col-md-3" style="flex: 1 1 220px; max-width: 250px">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="./assets/imgs/Egypt.jpeg"
+                loading="lazy"
+                alt="الطب والتحنيط" />
+              <h5 style="color: #8b6b3f">الطب والتحنيط</h5>
+              <p>
+                تفوقوا في الطب والجراحة والتحنيط وحفظ الجسد بعد الموت بطرق علمية
+                متقدمة.
+              </p>
+            </div>
+          </div>
+
+          <!-- 🪶 الكتابة الهيروغليفية -->
+          <div class="col-md-3" style="flex: 1 1 220px; max-width: 250px">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="./assets/imgs/carousel1.png"
+                loading="lazy"
+                alt="الكتابة الهيروغليفية" />
+              <h5 style="color: #8b6b3f">الكتابة الهيروغليفية</h5>
+              <p>
+                ابتكر المصريون أول نظام كتابة رمزية خلد تاريخهم على جدران
+                المعابد والبرديات.
+              </p>
+            </div>
+          </div>
+
+          <!-- ☀️ الفلك والزراعة -->
+          <div class="col-md-3" style="flex: 1 1 220px; max-width: 250px">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="./assets/imgs/الزراعه.jpg"
+                loading="lazy"
+                alt="الفلك والزراعة" />
+              <h5 style="color: #8b6b3f">الفلك والزراعة</h5>
+              <p>
+                قسّموا السنة إلى فصول وفق حركة الشمس ونهر النيل، فأسسوا التقويم
+                الزراعي الأول في التاريخ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="imags container">
+      <h3>سحر الحضارة المصرية</h3>
+      <div class="album" data-aos="fade-up">
+        <img
+          src="./assets/imgs/album/pexels-alexazabache-3214972.jpg"
+          loading="lazy"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-delay="100" />
+        <img
+          src="./assets/imgs/album/pexels-arralyn-1263036-2402926.jpg"
+          loading="lazy"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-delay="200" />
+        <img
+          src="./assets/imgs/album/pexels-axp-photography-500641970-18991548.jpg"
+          loading="lazy"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-delay="300" />
+        <img
+          src="./assets/imgs/album/pexels-dajana-reci-289671698-18651378.jpg"
+          loading="lazy"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-delay="400" />
+        <img
+          src="./assets/imgs/album/pexels-frans-van-heerden-201846-631339.jpg"
+          loading="lazy"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-delay="500" />
+      </div>
+    </div>
+
+    <section id="pharaohs" class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-4 section-title">
+          أهم الملوك والفراعنة في مصر القديمة
+        </h2>
+        <p class="text-center mb-5 section-desc">
+          ترك ملوك مصر القديمة إرثًا خالدًا في التاريخ الإنساني، من أهراماتهم
+          الشاهقة إلى إنجازاتهم العسكرية والعلمية.
+        </p>
+
+        <div class="row g-4 pharaohs-grid">
+          <!-- الملك مينا -->
+          <div class="col-md-3 pharaoh-card" data-aos="zoom-in">
+            <div class="card h-100 text-center">
+              <img
+                src="./assets/imgs/Narmer_Palette-870x613.jpeg"
+                alt="الملك مينا" />
+              <h5>الملك مينا (نارمر)</h5>
+              <p>
+                موحد القطرين ومؤسس أول أسرة فرعونية، بدأ عصر الدولة القديمة ووضع
+                أسس الحكم الموحد.
+              </p>
+            </div>
+          </div>
+
+          <!-- الملك خوفو -->
+          <div
+            class="col-md-3 pharaoh-card"
+            data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="card h-100 text-center">
+              <img src="./assets/imgs/خوفو.jpg" alt="الملك خوفو" />
+              <h5>الملك خوفو</h5>
+              <p>
+                بنى الهرم الأكبر أحد عجائب الدنيا السبع، وأظهر براعة المصريين في
+                الهندسة المعمارية.
+              </p>
+            </div>
+          </div>
+
+          <!-- الملكة حتشبسوت -->
+          <div
+            class="col-md-3 pharaoh-card"
+            data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="card h-100 text-center">
+              <img
+                src="./assets/imgs/Queen-Hatshepsut-History-Egypt-Tours-Portal.jpg"
+                alt="الملكة حتشبسوت" />
+              <h5>الملكة حتشبسوت</h5>
+              <p>
+                من أعظم الملكات في التاريخ المصري، ازدهرت التجارة وبُني معبدها
+                المدهش في الدير البحري.
+              </p>
+            </div>
+          </div>
+
+          <!-- الملك رمسيس الثاني -->
+          <div
+            class="col-md-3 pharaoh-card"
+            data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="card h-100 text-center">
+              <img
+                src="./assets/imgs/رمسيس الثاني.jpg"
+                alt="الملك رمسيس الثاني" />
+              <h5>رمسيس الثاني</h5>
+              <p>
+                أعظم ملوك الدولة الحديثة، بنى معابد أبو سمبل وخاض معركة قادش
+                وسُمي بالعظيم.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="museums-section py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">من الماضي إلى الحاضر</h2>
+        <p class="section-subtitle mb-5">
+          حيث تحيا الحضارة في المتاحف الحديثة، من أهرامات الجيزة إلى قاعات
+          المتحف المصري الكبير. اكتشف روائع الفن المصري القديم في أروع المتاحف
+          والمعارض المعاصرة.
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="museum-card d-flex flex-column" data-aos="zoom-in">
+              <img
+                src="./assets/imgs/museum2.jpg"
+                alt="المتحف المصري الكبير"
+                class="img-fluid rounded-4" />
+              <h5 class="mt-3 fw-bold">المتحف المصري الكبير</h5>
+              <p>
+                عند أقدام الأهرامات الشامخة يقف المتحف المصري الكبير شاهدًا على
+                عبقرية المصري القديم وعظمة الحضارة التي لا تموت. يضم المتحف أكثر
+                من مئة ألف قطعة أثرية تروي قصة مصر عبر آلاف السنين، من تمثال
+                رمسيس الثاني المهيب إلى كنوز توت عنخ آمون الذهبية. إنه بوابة
+                حديثة إلى ماضيٍ خالد، يجمع بين التكنولوجيا المعاصرة وروح التاريخ
+                العريق
+              </p>
+              <button
+                class="btn py-2 fw-bold"
+                onclick="window.open('https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D9%81+%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A+%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%E2%80%AD/data=!4m2!3m1!1s0x0:0x45764c5bc4ec261a?sa=X&ved=1t:2428&ictx=111', '_blank')">
+                أعرف مكانه
+              </button>
+              <button
+                class="btn py-2 fw-bold"
+                onclick="window.open('https://visit-gem.com/ar/AdmissionTkt', '_blank')">
+                أحجز تذكرتك الان
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="museum-card d-flex flex-column gap-3"
+              data-aos="zoom-in"
+              data-aos-delay="100">
+              <img
+                src="./assets/imgs/المنحف القومي.jpg"
+                alt="متحف الحضارة المصرية"
+                class="img-fluid rounded-4" />
+              <h5 class="mt-3 fw-bold">متحف الحضارة المصرية</h5>
+              <p>
+                المتحف القومي للحضارة المصرية بالفسطاط يعرض تاريخ مصر منذ عصور
+                ما قبل التاريخ حتى العصر الحديث. افتُتح عام 2021 في موكب
+                المومياوات الملكية، ويضم قطعًا أثرية نادرة وقاعات مميزة مثل قاعة
+                المومياوات وقاعة النسيج المصري، ليجسد رحلة الحضارة المصرية عبر
+                الزمن.
+              </p>
+              <button
+                class="btn py-2 fw-bold"
+                onclick="window.open('https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D9%81+%D8%A7%D9%84%D9%82%D9%88%D9%85%D9%8A+%D9%84%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9%E2%80%AD/@30.0085929,31.2482393,17z/data=!3m1!4b1!4m6!3m5!1s0x1458476863e39e8f:0xc2e058446f8f145d!8m2!3d30.0085929!4d31.2482393!16s%2Fg%2F11b8ch7dmc?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                أعرف مكانه
+              </button>
+              <button
+                class="btn py-2 fw-bold"
+                onclick="window.open('https://egymonuments.com/nmec/tickets','_blank')">
+                أحجز تذكرتك الان
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="museum-card d-flex flex-column gap-3"
+              data-aos="zoom-in"
+              data-aos-delay="200">
+              <img
+                src="./assets/imgs/متحف الاسكندريه.jpg"
+                alt="متحف الإسكندرية القومي"
+                class="img-fluid rounded-4" />
+              <h5 class="mt-3 fw-bold">متحف الإسكندرية القومي</h5>
+              <p>
+                يُعد متحف الإسكندرية القومي من أجمل المتاحف في مصر، إذ كان في
+                الأصل قصرًا رائعًا بُني على الطراز الإيطالي عام 1928 قبل أن
+                يتحول إلى متحف عام 2003. يضم المتحف ثلاث طوابق تعرض تاريخ مصر
+                عبر العصور، من الدولة القديمة حتى العصر الحديث، ويحتوي على قطع
+                أثرية مميزة مثل تماثيل فرعونية ويونانية ورومانية، تُبرز روعة
+                التراث المصري المتنوع.
+              </p>
+              <button
+                class="btn py-2 fw-bold"
+                onclick="window.open('https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D9%81+%D8%A7%D9%84%D9%82%D9%88%D9%85%D9%8A+%D9%84%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9%E2%80%AD/@30.0085929,31.2482393,17z/data=!3m1!4b1!4m6!3m5!1s0x1458476863e39e8f:0xc2e058446f8f145d!8m2!3d30.0085929!4d31.2482393!16s%2Fg%2F11b8ch7dmc?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                أعرف مكانه
+              </button>
+              <button
+                class="btn py-2 fw-bold"
+                onclick="window.open( 'https://egymonuments.com/details/AlexandriaNationalMuseum ' , '_blank') ">
+                أحجز تذكرنك الان
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 fs-2">🌙 حكم خالدة من أرض كيمِت</h2>
+        <p class="mb-5 text-warning fs-3">
+          عبّر الحكماء المصريون القدماء بكلمات من نور، تلهمنا حتى اليوم وتكشف
+          حكمة الزمان.
+        </p>
+        <div class="d-flex flex-column gap-4">
+          <blockquote class="fs-5 fst-italic">
+            “افعل الخير، فهو الباقي بعد فناء الجسد.” – بتاح حتب
+          </blockquote>
+          <blockquote class="fs-5 fst-italic">
+            “العلم كنز من كنوز الإله، ومن طلبه نال النور.” – من نصوص هرموبوليس
+          </blockquote>
+          <blockquote class="fs-5 fst-italic">
+            “من يعرف نفسه، لا يخاف شيئًا.” – من تعاليم الحكماء
+          </blockquote>
+          <blockquote class="fs-5 fst-italic">
+            “الكلمة الطيبة أثمن من الذهب.” – من بردية الأخلاق
+          </blockquote>
+          <blockquote class="fs-5 fst-italic">
+            “العدل أساس الملك، والحق لا يموت.” – من أقوال تحتمس الثالث
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-light py-5" style="background-color: #fffbcf">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- القسم 1 -->
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">عن كِمِت</h5>
+            <p>
+              كِمِت — نافذتك على الحضارة المصرية القديمة. من المعابد والمقابر
+              إلى المتاحف الحديثة، نعيد إحياء مجد الفراعنة.
+            </p>
+          </div>
+
+          <!-- القسم 2 -->
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-decoration-none"
+                  style="color: #4a3b2e"
+                  >أكتشف كيميت</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#ages"
+                  class="text-decoration-none"
+                  style="color: #4a3b2e"
+                  >عروش كيميت
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#museums"
+                  class="text-decoration-none"
+                  style="color: #4a3b2e"
+                  >كنوز كيميت</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- القسم 3 -->
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">تواصل معنا</h5>
+            <p>📧 info@kemet.com</p>
+            <p>📞 +20 100 000 0000</p>
+            <p>📍 القاهرة، مصر</p>
+          </div>
+
+          <!-- القسم 4 -->
+          <div class="col-12 col-md-3 text-md-end text-center">
+            <h5 class="mb-3">موقع كِمِت 𓆎𓅓𓏏𓊖</h5>
+            <p>© 2025 جميع الحقوق محفوظة</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  مشروعك -->
+    <script src="./assets/js/main.js"></script>
+
+    <!--  AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        mirror: false,
+      });
+    </script>
+  </body>
+</html>

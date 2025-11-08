@@ -1,0 +1,1065 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+main {
+  background-image: url(../imgs/img-for-thorons/body.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  height: 75vh;
+  position: relative;
+  z-index: 1;
+}
+main .content {
+  position: absolute;
+  top: 10%;
+  z-index: 100;
+}
+main h1 {
+  color: #fff8e1;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  animation: goldenFade 2.5s ease-in-out;
+}
+@keyframes goldenFade {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0px gold;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ffd700;
+    transform: scale(1.05);
+  }
+  100% {
+    text-shadow: 0 0 8px #b8860b;
+    transform: scale(1);
+  }
+}
+
+main .content p {
+  font-family: "El Messiri", "Cairo", sans-serif;
+  color: #f3e9c6;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 22px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2;
+  animation: fadeUp 2s ease-out 1.5s forwards;
+  opacity: 0;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.layer {
+  background-color: rgb(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 993px) {
+  main {
+    height: 75vh;
+  }
+  main h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  main .content {
+    position: absolute;
+    top: 0;
+  }
+
+  main .content p {
+    font-size: 19px;
+    font-weight: 900;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1025px) {
+  main {
+    height: 75vh;
+  }
+
+  main .content {
+    position: absolute;
+    top: 0;
+  }
+}
+
+/* .king-one {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.king-one > .row .img-king .img {
+  height: 100%;
+}
+
+.king-one .content-king {
+  width: 80%;
+  background-image: url(../imgs/Kheops-Pyramid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  padding-right: 30px;
+}
+
+.king-one .content-king > .layer {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); /* طبقة غامقة شفافة */
+/* z-index: -100; */
+/* }
+
+.king-one .content-king h4,
+p,
+ul {
+  color: #fff8e1;
+}
+.king-one .content-king ul {
+  padding: 10px;
+  line-height: 2;
+}
+
+@media (max-width: 1025px) {
+  .king-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .king-one > .row .img-king > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .king-one > .row .content-king {
+    width: 100%;
+  }
+}
+
+@media (max-width: 993px) {
+  .king-one {
+    width: 100%;
+  }
+} */
+
+.hero-section .content img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+.hero-section .content img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@media (max-width: 993px) {
+  .hero-section {
+    flex-wrap: wrap;
+  }
+  .hero-section >.content{
+    width: 100%;
+    padding: 15px;
+  }
+  .hero-section >.content > p{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: #3b2f2f;
+  }
+    .hero-section >.content >.icons{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+ 
+}
+
+.king-khfo {
+  background-image: url(../imgs/img-for-thorons/pyramid-khfo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* محتوى النص */
+.king-khfo .content {
+  background-color: #fff3e0; /* لون فاتح مريح */
+  width: 50%;
+  min-width: 280px;
+  height: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #3b2f2f;
+  opacity: 0.7;
+}
+
+/* صورة الملك (دائرة) */
+.king-khfo .img-khfo {
+  background-image: url(../imgs/img-for-thorons/khfo-King.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 25%;
+  min-width: 300px;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 3px solid #fff3e0;
+}
+
+/* ✅ التجاوب مع الشاشات الصغيرة */
+@media (max-width: 992px) {
+  .king-khfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .king-khfo .content {
+    width: 90%;
+    order: 1;
+  }
+
+  .king-khfo .img-khfo {
+    order: 2;
+    width: 200px;
+    height: 200px;
+  }
+
+  .king-khfo .pyramid-khfo {
+    order: 3;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .king-khfo .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .king-khfo .content h6 {
+    font-size: 1rem;
+  }
+
+  .king-khfo .content p,
+  .king-khfo .content ul {
+    font-size: 0.9rem;
+  }
+}
+
+.Khafre {
+  background-image: url(../imgs/img-for-thorons/Khafre\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  min-height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* المحتوى النصي */
+.Khafre .content {
+  background-color: rgba(255, 243, 224, 0.9);
+  width: 45%;
+  max-width: 600px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #3b2f2f;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.Khafre .content:hover {
+  transform: translateY(-5px);
+}
+
+/* صورة الملك */
+.Khafre .img-Khafre {
+  background-image: url(../imgs/img-for-thorons/Khafre_statue.jpg);
+  background-size: cover;
+  background-position: center top;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #fff3e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.Khafre .img-Khafre:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ الشاشات المتوسطة */
+@media (max-width: 992px) {
+  .Khafre {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Khafre .content {
+    width: 90%;
+    order: 2;
+  }
+
+  .Khafre .img-Khafre {
+    order: 1;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* ✅ الشاشات الصغيرة */
+@media (max-width: 576px) {
+  .Khafre {
+    padding: 20px;
+  }
+
+  .Khafre .content {
+    padding: 15px;
+  }
+
+  .Khafre .content h3 {
+    font-size: 1.4rem;
+  }
+
+  .Khafre .content h6 {
+    font-size: 1.1rem;
+  }
+
+  .Khafre .content p,
+  .Khafre .content ul {
+    font-size: 0.95rem;
+  }
+
+  .Khafre .img-Khafre {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.Mankawara {
+  background-image: url(../imgs/img-for-thorons/منكاورع\ bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  min-height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* المحتوى النصي */
+.Mankawara .content {
+  background-color: rgba(255, 243, 224, 0.9);
+  width: 55%;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #3b2f2f;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.Mankawara .content:hover {
+  transform: translateY(-5px);
+}
+
+/* صورة الملك */
+.Mankawara .img-Mankawara {
+  background-image: url(../imgs/img-for-thorons/Menkaura_Bust_Closeup.jpg);
+  background-size: cover;
+  background-position: center top;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 4px solid #fff3e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.Mankawara .img-Mankawara:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ الشاشات المتوسطة */
+@media (max-width: 992px) {
+  .Mankawara {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Mankawara .content {
+    width: 90%;
+    order: 2;
+  }
+
+  .Mankawara .img-Mankawara {
+    order: 1;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* ✅ الشاشات الصغيرة */
+@media (max-width: 576px) {
+  .Mankawara {
+    padding: 20px;
+  }
+
+  .Mankawara .content {
+    padding: 15px;
+  }
+
+  .Mankawara .content h3 {
+    font-size: 1.4rem;
+  }
+
+  .Mankawara .content h6 {
+    font-size: 1.1rem;
+  }
+
+  .Mankawara .content p,
+  .Mankawara .content ul {
+    font-size: 0.95rem;
+  }
+
+  .Mankawara .img-Mankawara {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.pyramids-section {
+  background: linear-gradient(180deg, #fffaf0 0%, #f7efe3 100%);
+  color: #4b3b2a;
+  font-family: "Cairo", sans-serif;
+}
+
+.main-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #8b6b3f;
+  position: relative;
+  display: inline-block;
+}
+
+.main-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #7d4b0a;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.intro {
+  max-width: 750px;
+  margin: auto;
+  color: #6a5840;
+  font-size: 20px;
+  font-weight: bold;
+    font-family: 'El Messiri', sans-serif;
+
+}
+
+.pyramid-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.9;
+  font-size: 20px;
+  color:  #5e4b36;
+  font-weight: bold;
+
+}
+
+.pyramid-text .quote {
+  background: #fff3d6;
+  border-left: 4px solid #d4a15e;
+  padding: 1rem;
+  border-radius: 8px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.pyramid-image img {
+  width: 100%;
+  height: 60%;
+  opacity: 0.9;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+.pyramid-image img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.sub-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sub-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.sub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.sub-card h3 {
+  color: #a67840;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.sub-card p {
+  color: #5e4b36;
+  line-height: 1.7;
+}
+
+.articale{
+  margin-top: 50px;
+  height: 400px;
+
+
+}
+.articale >.content{
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  height: 300px;
+  background-color: #3b2f2f13;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+}
+
+
+
+
+
+.king-narmar {
+  background-size: cover;
+  background-position: center;
+  color: #2d1e0f;
+  font-family: 'El Messiri', sans-serif;
+}
+
+.king-narmar .card {
+  background: rgba(255, 243, 224, 0.95);
+  border-radius: 20px;
+}
+
+.king-narmar .img-narmar {
+  padding: 20px;
+}
+
+.king-narmar .img-narmar img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.6s ease;
+}
+
+.king-narmar .img-narmar img:hover {
+  transform: scale(1.05);
+}
+
+.king-narmar .card-body {
+  background-color: rgba(255, 248, 230, 0.95);
+  border-radius: 0 20px 20px 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.king-narmar .card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5a3b1e;
+}
+
+.king-narmar .text-brown {
+  color: #6b4a2b;
+}
+
+/* التجاوب */
+@media (max-width: 768px) {
+  .king-narmar .img-narmar img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .king-narmar .card-body {
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+  }
+
+  .king-narmar .card-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* الصورة */
+.king-ramses .img-ramses-2 {
+  height: 100%;
+}
+
+.king-ramses .img-ramses-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  border-radius: 0;
+}
+
+/* حركة لطيفة للصورة */
+.king-ramses .img-ramses-2 img:hover {
+  transform: scale(1.08);
+}
+
+/* المحتوى */
+.king-ramses .card-body {
+  background-color: rgba(255, 243, 224, 0.9);
+  border-radius: 0 20px 20px 0;
+  color: #3b2f2f;
+}
+
+/* العنوان */
+.king-ramses .card-title {
+  font-weight: 700;
+  color: #5a3b1e;
+}
+
+/* التجاوب */
+@media (max-width: 768px) {
+  .king-ramses .card {
+    flex-direction: column;
+  }
+  .king-ramses .img-ramses-2 img {
+    border-radius: 20px 20px 0 0;
+  }
+  .king-ramses .card-body {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+
+.Akhenaten .card-body {
+  font-size: 20px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  line-height: 2;
+  color: #3b2f2f;
+  font-weight: bold;
+
+}
+.akhenaten {
+  background: linear-gradient(to bottom, #f8f3e7, #efe3c5);
+  font-family: "El Messiri", "Tajawal", sans-serif;
+}
+
+.akhenaten .card {
+
+  color: #2e1e0f;
+}
+
+.akhenaten h2, 
+.akhenaten h3, 
+.akhenaten h4 {
+  color: #5a3c1d;
+  font-weight: 700;
+}
+
+.akhenaten p {
+  color: #3e2c1b;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.akhenaten .period {
+  color: #7b4b1f;
+  font-weight: 600;
+}
+
+.akhenaten .img-box {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.akhenaten .img-box img {
+  border-radius: 0;
+  transition: transform 0.6s ease;
+}
+
+.akhenaten .img-box:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+.akhenaten .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+
+
+.tutankhamun {
+  background-color: #fdf8f0;
+  padding: 50px 0;
+  font-family: "Cairo", sans-serif;
+}
+
+.tutankhamun .card {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  background: #fffaf3;
+}
+
+.tutankhamun .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.tutankhamun img {
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+  transition: 0.9s;
+}
+
+.tutankhamun img:hover {
+  transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+
+.tutankhamun .card-body {
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+}
+
+.tutankhamun h2 {
+  color: #4b3b2a;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tutankhamun h4 {
+  color: #c49a2e;
+  margin-top: 20px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 600;
+}
+
+.tutankhamun p {
+  color: #3a2c1e;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.tutankhamun .period {
+  color: #7c6f57;
+  margin-bottom: 15px;
+}
+
+.tutankhamun .quote {
+  margin-top: 20px;
+  background: #f6e7b8;
+  padding: 15px 20px;
+  border-left: 5px solid #c59b2f;
+  font-style: italic;
+  border-radius: 10px;
+  color: #4b3b2a;
+}
+
+
+ .hatshepsut {
+  background-color: #fcf7ef;
+  padding: 50px 0;
+  font-family: "Cairo", sans-serif;
+}
+
+.hatshepsut .card {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  background: #fffaf3;
+}
+
+.hatshepsut .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(139, 107, 63, 0.3);
+}
+
+.hatshepsut img {
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.hatshepsut img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(139, 107, 63, 0.25);
+}
+
+.hatshepsut .card-body {
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+}
+
+.hatshepsut h2 {
+  color: #4b3b2a;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hatshepsut h4 {
+  color: #b58533;
+  margin-top: 20px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 600;
+}
+
+.hatshepsut p {
+  color: #3a2c1e;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.hatshepsut .period {
+  color: #7c6f57;
+  margin-bottom: 15px;
+}
+
+.hatshepsut .quote {
+  margin-top: 20px;
+  background: #f7e6b2;
+  padding: 15px 20px;
+  border-left: 5px solid #b78b2e;
+  font-style: italic;
+  border-radius: 10px;
+  color: #4b3b2a;
+}
+
+/* تأثير الصورة الفخم للملكة حتشبسوت */
+.hatshepsut .card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* توهج ذهبي ناعم على الصورة */
+.hatshepsut .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 215, 0, 0.35),
+    rgba(255, 255, 255, 0.15)
+  );
+  transform: skewX(-25deg);
+  transition: 0.9s;
+  opacity: 0;
+}
+
+.hatshepsut .card:hover::after {
+  left: 125%;
+  opacity: 1;
+}
+
+/* عشان التوهج يظهر فوق الصورة بس */
+.hatshepsut img {
+  position: relative;
+  z-index: 2;
+}
+
+
+ .egypt-timeline {
+  background: url("./assets/imgs/bg-papyrus.jpg") center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  color: #4b3b2a;
+  position: relative;
+}
+
+.timeline-title {
+  font-size: 28px;
+  color: #b38b20;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.timeline-sub {
+  color: #5b4522;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to left, #d4af37, #f5d76e, #d4af37);
+  border-radius: 4px;
+  transform: translateY(-50%);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+.timeline-item {
+  background: rgba(255, 250, 240, 0.85);
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  padding: 15px 10px;
+  width: 120px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: calc(var(--i) * 0.25s);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+.timeline-item h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #3b2d16;
+  font-weight: 600;
+}
+
+.timeline-item .year {
+  font-size: 13px;
+  color: #6a5432;
+  font-weight: 500;
+}
+
+/* ✨ Animations */
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #f5d76e; }
+  to { box-shadow: 0 0 25px #ffd700; }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .timeline-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .timeline-container::before {
+    display: none; /* نخفي الخط في الوضع العمودي */
+  }
+  .timeline-item {
+    width: 80%;
+    max-width: 300px;
+  }
+}
