@@ -70,11 +70,11 @@ main .content p {
 
 @media (max-width: 993px) {
   main {
-    height: 75vh;
+    height: 80vh;
   }
   main h1 {
-    font-size: 22px;
-    width: 100%;
+    font-size: 25px;
+    width: 90%;
   }
 
   main .content {
@@ -85,13 +85,13 @@ main .content p {
   main .content p {
     font-size: 19px;
     font-weight: 900;
-    width: 100%;
+    width: 90%;
   }
 }
 
 @media (max-width: 1025px) {
   main {
-    height: 75vh;
+    height: 80vh;
   }
 
   main .content {
@@ -1063,3 +1063,4 @@ ul {
     max-width: 300px;
   }
 }
+
